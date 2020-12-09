@@ -1,0 +1,28 @@
+/**
+* 공통 믹스인 모음
+*/
+@mixin responsive($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 480px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == tab_vert {
+        @media only screen and (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == tab_hori {
+        @media only screen and (max-width: 1024px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == desktop {
+        @media only screen and (min-width: 1025px) {
+            @content;
+        }
+    }
+}

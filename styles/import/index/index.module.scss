@@ -1,0 +1,159 @@
+@import '../../common/mixins';
+
+.wrap {
+    width: 100%;
+}
+
+.logoWrap {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .coupangPartners {
+        font-size: 1.4rem;
+        letter-spacing: 0.2rem;
+        margin-bottom: 10px;
+
+        > * {
+            font-family: 'NanumSquareEB';
+        }
+
+        > .cou {
+            color: #560000;
+        }
+
+        > .p {
+            color: #d83128;
+        }
+
+        > .a {
+            color: #ea991b;
+        }
+
+        > .n {
+            color: #93ba2f;
+        }
+
+        > .g {
+            color: #4da4e0;
+        }
+
+        > .partners {
+            color: #333333;
+        }
+    }
+
+    .titleBox {
+        color: #333333;
+        letter-spacing: 0.3rem;
+
+        .title {
+            font-size: 3rem;
+            font-family: 'NanumSquareEB';
+        }
+    }
+}
+
+.bodyWrap {
+    width: 100%;
+    padding: 5vh 20%;
+
+    .redirectionWrap {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0 10vh 0;
+    }
+
+    // Redirection Input 및 button 박스
+    .redirectionBox {
+        width: 100%;
+        display: flex;
+
+        .redirectionInput {
+            width: calc(100% - (140px + 10px));
+            height: 3.4rem;
+            padding: 10px 16px;
+            font-size: 1.2rem;
+            font-family: 'NanumSquareB';
+            letter-spacing: 0.1rem;
+            border-radius: 6px;
+        }
+
+        .createRedirectionButton {
+            width: 140px;
+            height: 3.4rem;
+            font-size: 0.9rem;
+            border-radius: 6px;
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'NanumBarunGothicR';
+            font-weight: bold;
+            background-color: #2e86de;
+            color: #fff;
+            padding: 1px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #54a0ff;
+            }
+        }
+    }
+
+    // Redirection 프리뷰 박스
+    .redirectionPreviewBox {
+    }
+
+    .descriptionWrap {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .descriptionContainer {
+        width: calc((100% / 3) - (30px * 2));
+        padding: 24px 0;
+        margin: 0 30px;
+
+        // @include responsive(tab_vert) {
+        //     padding-left: 32px;
+        // }
+
+        // @include responsive(phone) {
+        //     padding-left: 20px;
+        // }
+
+        .image {
+            margin-bottom: 30px;
+        }
+
+        .title {
+            width: 100%;
+            font-size: 1.3rem;
+            font-family: 'NanumSquareB';
+            margin: 8px 0 10px 0;
+        }
+
+        .contents {
+            width: 100%;
+            font-family: 'NanumBarunGothicR';
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.footerWrap {
+    width: 100%;
+    height: 3rem;
+    padding: 0 20vw;
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    font-family: 'NanumBarunGothicUL';
+    font-size: 0.8rem;
+}
