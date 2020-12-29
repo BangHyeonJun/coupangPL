@@ -28,10 +28,9 @@ function Index() {
                 <section className={cx('bodyWrap')}>
                     <div className={cx('redirectionWrap')}>
                         <div className={cx('redirectionBox')}>
-                            <input
-                                type="url"
+                            <textarea
                                 placeholder={
-                                    '쿠팡 파트너스 링크를 입력해 주세요'
+                                    '쿠팡 파트너스 단축URL 혹은 일반태그, 블로그용 태그를 입력해 주세요'
                                 }
                                 className={cx('redirectionInput')}
                             />
@@ -146,7 +145,8 @@ function Index() {
                     </span>
                 </footer>
             </div>
-            <div className={cx('bg')}>
+            {/* 로그인 */}
+            {/* <div className={cx('bg')}>
                 <div className={cx('wrap')}>
                     <div className={cx('loginImg')}>
                         <Image
@@ -170,7 +170,7 @@ function Index() {
                         <a href={'#'}>회원가입</a>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     );
 }
