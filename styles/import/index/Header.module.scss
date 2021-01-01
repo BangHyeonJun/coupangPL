@@ -1,0 +1,58 @@
+.logoWrap {
+    width: 100%;
+    height: 26vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .coupangPartners {
+        font-size: 1.4rem;
+        letter-spacing: 0.2rem;
+        margin-bottom: 10px;
+
+        > * {
+            font-family: 'NanumSquareEB';
+        }
+
+        > .cou {
+            color: #560000;
+        }
+
+        > .p {
+            color: #d83128;
+        }
+
+        > .a {
+            color: #ea991b;
+        }
+
+        > .n {
+            color: #93ba2f;
+        }
+
+        > .g {
+            color: #4da4e0;
+        }
+
+        > .partners {
+            color: #333333;
+        }
+    }
+
+    .titleBox {
+        color: #333333;
+        letter-spacing: 0.3rem;
+
+        .title {
+            font-size: 3rem;
+            font-family: 'NanumSquareEB';
+        }
+
+        .beta {
+            font-size: 1.4rem;
+            font-family: 'NanumSquareL';
+            color: #3867d6;
+        }
+    }
+}

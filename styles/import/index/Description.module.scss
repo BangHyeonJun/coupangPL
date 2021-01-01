@@ -1,0 +1,36 @@
+@import '../../common/mixins';
+
+.descriptionContainer {
+    width: calc((100% / 3) - (30px * 2));
+    padding: 24px 0;
+    margin: 0 30px;
+
+    @include responsive(tab_vert) {
+        width: calc((100% / 2) - (30px * 2));
+    }
+
+    @include responsive(tab_hori) {
+        width: calc((100% / 2) - (30px * 2));
+    }
+
+    @include responsive(phone) {
+        width: calc((100% / 1) - (30px * 2));
+    }
+
+    .image {
+        margin-bottom: 30px;
+    }
+
+    .title {
+        width: 100%;
+        font-size: 1.3rem;
+        font-family: 'NanumSquareB';
+        margin: 8px 0 10px 0;
+    }
+
+    .contents {
+        width: 100%;
+        font-family: 'NanumBarunGothicR';
+        font-size: 0.8rem;
+    }
+}
