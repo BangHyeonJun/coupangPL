@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import Head from 'next/head';
+import { encrypt } from './helpers/crypto';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -9,10 +11,53 @@ import styles from '@/styles/import/index/index.module.scss';
 const cx = classNames.bind(styles);
 
 function Index() {
-    const [red, setRed] = useState('');
+    const [CPUrl, setCPUrl] = useState('');
+    const [redirectionURL, setRedirectionURL] = useState('');
+    const resultUrlRef: React.LegacyRef<HTMLInputElement> = useRef(null);
+
+    const handleClickRedirection = () => {
+        const rule = /https:\/\/coupa.ng\/([A-Za-z0-9]+)/;
+
+        if (rule.test(CPUrl)) {
+            const url = encrypt(CPUrl, process.env.NEXT_PUBLIC_SALT_KEY);
+            const encodeURL = encodeURIComponent(url);
+            const resultURL = `${process.env.NEXT_PUBLIC_HOST}/redirect?url=${encodeURL}`;
+            setRedirectionURL(resultURL);
+        } else {
+            alert('쿠팡 파트너스 단축 URL만 생성 가능합니다.');
+        }
+    };
+
+    const handleKeyPressRedirection = (
+        e: React.KeyboardEvent<HTMLInputElement>,
+    ) => {
+        if (e.key === 'Enter') {
+            handleClickRedirection();
+        }
+    };
+
+    const handleChangeRedirection = (
+        e: React.ChangeEvent<HTMLInputElement>,
+    ) => {
+        const value: string = e.target.value || '';
+        setCPUrl(value.replace(/\s/gi, ''));
+    };
+
+    const handleClicCopy = () => {
+        if (resultUrlRef.current.value) {
+            resultUrlRef.current.select();
+            document.execCommand('copy');
+        }
+    };
+
     return (
         <>
             <div className={cx('wrap')}>
+                {/* 헤드 */}
+                {/* <Head>
+
+                </Head> */}
+
                 {/* 헤더 */}
                 <Header isBeta={true}></Header>
 
@@ -20,16 +65,47 @@ function Index() {
                 <section className={cx('bodyWrap')}>
                     <div className={cx('redirectionWrap')}>
                         <div className={cx('redirectionBox')}>
-                            <textarea
+                            <input
+                                type={'url'}
+                                name={'redirection'}
                                 placeholder={
-                                    '쿠팡 파트너스 단축URL 혹은 일반태그, 블로그용 태그를 입력해 주세요'
+                                    '쿠팡 파트너스 단축URL을 입력해 주세요'
                                 }
                                 className={cx('redirectionInput')}
+                                value={CPUrl}
+                                onChange={handleChangeRedirection}
+                                onKeyPress={handleKeyPressRedirection}
                             />
-                            <button className={cx('createRedirectionButton')}>
-                                리디렉션
-                                <br />
-                                생성
+                            <button
+                                className={cx('button', 'create')}
+                                onClick={handleClickRedirection}
+                            >
+                                리디렉션 생성
+                            </button>
+                        </div>
+                        <div
+                            className={cx(
+                                'redirectionBox',
+                                'redirectionResultBox',
+                                'show',
+                            )}
+                        >
+                            <input
+                                type={'url'}
+                                ref={resultUrlRef}
+                                name={'redirection'}
+                                placeholder={''}
+                                className={cx('redirectionInput')}
+                                value={redirectionURL}
+                                onChange={handleChangeRedirection}
+                                onClick={handleClicCopy}
+                                readOnly={true}
+                            />
+                            <button
+                                className={cx('button', 'copy')}
+                                onClick={handleClicCopy}
+                            >
+                                복사
                             </button>
                         </div>
                     </div>
