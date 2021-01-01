@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { decrypt } from './helpers/crypto';
+import { decrypt } from '../src/helpers/crypto';
 
 import classNames from 'classnames/bind';
 import styles from '@/styles/import/redirect/redirect.module.scss';

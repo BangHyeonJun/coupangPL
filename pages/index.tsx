@@ -1,10 +1,10 @@
 import React, { useState, useRef } from 'react';
 import Head from 'next/head';
-import { encrypt } from './helpers/crypto';
+import { encrypt } from '../src/helpers/crypto';
 
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Description from './components/Description';
+import Header from '../src/components/Header';
+import Footer from '../src/components/Footer';
+import Description from '../src/components/Description';
 
 import classNames from 'classnames/bind';
 import styles from '@/styles/import/index/index.module.scss';
@@ -47,6 +47,8 @@ function Index() {
         if (resultUrlRef.current.value) {
             resultUrlRef.current.select();
             document.execCommand('copy');
+        } else {
+            alert('먼저 쿠팡 파트너스 단축 URL을 입력해주세요');
         }
     };
 
