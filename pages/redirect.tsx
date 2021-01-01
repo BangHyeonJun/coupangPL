@@ -43,6 +43,7 @@ function redirect() {
                     async
                     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
                 ></script>
+                <title>쿠팡 파트너스 | 온라인 리디렉션 생성기</title>
             </Head>
             <div className={cx('wrap')}>
                 <div className={cx('container')}>

@@ -66,6 +66,7 @@ function Index() {
                         name="viewport"
                         content="width=device-width, initial-scale=1, shrink-to-fit=no"
                     />
+                    <title>쿠팡 파트너스 | 온라인 리디렉션 생성기</title>
                 </Head>
 
                 {/* 헤더 */}
