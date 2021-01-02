@@ -79,6 +79,13 @@ function redirect() {
                 />
                 <meta name="twitter:image" content="/images/opengraph.jpg" />
 
+                {/* 구글 서치 콘솔 */}
+                <meta
+                    name="google-site-verification"
+                    content="d-xcWas9fG1pO930ekTYAPoo8WyhYAjSB1u0-vhUSqE"
+                />
+
+                {/* 애드센스 */}
                 <script
                     data-ad-client="ca-pub-4278000043835062"
                     async
