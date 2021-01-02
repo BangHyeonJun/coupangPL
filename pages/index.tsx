@@ -57,15 +57,35 @@ function Index() {
             <div className={cx('wrap')}>
                 {/* 헤드 */}
                 <Head>
+                    <meta
+                        name="viewport"
+                        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+                    />
+                    <meta
+                        name="title"
+                        property="og:title"
+                        content="쿠팡 파트너스 | 온라인 리디렉션 생성기"
+                    />
+                    <meta
+                        name="description"
+                        property="og:description"
+                        content="쿠팡 파트너스로 인한 블로그 저품질을 막기 위한 리디렉션 생성기 입니다."
+                    />
+                    <meta
+                        name="image"
+                        property="og:image"
+                        content="/images/opengraph.jpg"
+                    />
+                    <meta
+                        name="url"
+                        property="og:url"
+                        content="https://cpredirection.com/"
+                    />
                     <script
                         data-ad-client="ca-pub-4278000043835062"
                         async
                         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
                     ></script>
-                    <meta
-                        name="viewport"
-                        content="width=device-width, initial-scale=1, shrink-to-fit=no"
-                    />
                     <title>쿠팡 파트너스 | 온라인 리디렉션 생성기</title>
                 </Head>
 
