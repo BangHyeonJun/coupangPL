@@ -8,7 +8,19 @@ import classNames from 'classnames/bind';
 import styles from '@/styles/import/redirect/redirect.module.scss';
 const cx = classNames.bind(styles);
 
-function redirect() {
+function Rocket() {
+    return (
+        <Image
+            src={'/images/rocket.gif'}
+            alt={'온라인 쿠팡 리디렉션 생성기'}
+            width={600}
+            height={600}
+            className={cx('image')}
+        ></Image>
+    );
+}
+
+function Redirect() {
     const [dots, setDots] = useState('...');
     const router = useRouter();
     const { url } = router.query;
@@ -96,13 +108,7 @@ function redirect() {
             <div className={cx('wrap')}>
                 <div className={cx('container')}>
                     <div className={cx('imageBox')}>
-                        <Image
-                            src={'/images/rocket.gif'}
-                            alt={'온라인 쿠팡 리디렉션 생성기'}
-                            width={600}
-                            height={600}
-                            className={cx('image')}
-                        ></Image>
+                        <Rocket></Rocket>
                     </div>
                     <div className={cx('textBox')}>
                         <span style={{ color: '#4da4e0' }}>상품</span>
@@ -117,4 +123,4 @@ function redirect() {
     );
 }
 
-export default redirect;
+export default Redirect;

@@ -2,6 +2,12 @@
 * 공통 믹스인 모음
 */
 @mixin responsive($breakpoint) {
+    @if $breakpoint == fold {
+        @media only screen and (max-width: 372px) {
+            @content;
+        }
+    }
+
     @if $breakpoint == phone {
         @media only screen and (max-width: 480px) {
             @content;
