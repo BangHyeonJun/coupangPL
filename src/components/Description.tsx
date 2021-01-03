@@ -37,15 +37,6 @@ function Description() {
         {
             id: 4,
             image: {
-                src: '/images/blog.svg',
-                alt: '모든 블로그 사용가능',
-            },
-            title: '클라우드 저장(예정)',
-            contents: `사용자의 쿠팡 파트너스 링크는 클라우드에 저장되어지므로 링크의 유실을 방지할 수 있으며 사용자의 컴퓨터에서 임의에 작업을 시행해 성능의 무리가 없이 사용이 가능합니다.`,
-        },
-        {
-            id: 5,
-            image: {
                 src: '/images/cloud.svg',
                 alt: '쿠팡 파트너스 클라우드 저장',
             },
@@ -53,7 +44,7 @@ function Description() {
             contents: `사용자의 쿠팡 파트너스 링크는 클라우드에 저장되어지므로 링크의 유실을 방지할 수 있으며 사용자의 컴퓨터에서 임의에 작업을 시행해 성능의 무리가 없이 사용이 가능합니다.`,
         },
         {
-            id: 6,
+            id: 5,
             image: {
                 src: '/images/benefits.svg',
                 alt: '쿠팡 파트너스 리다이렉션 생성기 수익을 위한 도구',

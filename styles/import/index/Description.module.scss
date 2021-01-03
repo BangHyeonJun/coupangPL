@@ -4,26 +4,56 @@
     width: calc((100% / 3) - (30px * 2));
     padding: 24px 0;
     margin: 0 30px;
-
-    @include responsive(tab_vert) {
-        width: calc((100% / 2) - (30px * 2));
-    }
-
-    @include responsive(tab_hori) {
-        width: calc((100% / 2) - (30px * 2));
-    }
-
-    @include responsive(phone) {
-        width: calc((100% / 1) - (30px * 2));
-    }
+    font-size: 1rem;
 
     .image {
         margin-bottom: 30px;
+        width: 100px;
+    }
+
+    @include responsive(tab_hori) {
+        width: calc((100% / 2) - (20px * 2));
+        font-size: 0.9rem;
+        margin: 0 20px;
+
+        .image {
+            width: 90px;
+        }
+    }
+
+    @include responsive(tab_vert) {
+        width: calc((100% / 2) - (20px * 2));
+        font-size: 0.8rem;
+        margin: 0 20px;
+
+        .image {
+            width: 80px;
+        }
+    }
+
+    @include responsive(phone) {
+        width: calc((100% / 1) - (10px * 2));
+        font-size: 0.7rem;
+        margin: 0 10px;
+
+        .image {
+            width: 60px;
+        }
+    }
+
+    @include responsive(fold) {
+        width: calc((100% / 1) - (10px * 2));
+        font-size: 0.7rem;
+        margin: 0 10px;
+
+        .image {
+            width: 50px;
+        }
     }
 
     .title {
         width: 100%;
-        font-size: 1.3rem;
+        font-size: 1.3em;
         font-family: 'NanumSquareB';
         margin: 8px 0 10px 0;
     }
@@ -31,7 +61,7 @@
     .contents {
         width: 100%;
         font-family: 'NanumBarunGothicR';
-        font-size: 1rem;
+        font-size: 1em;
         color: #555;
     }
 }

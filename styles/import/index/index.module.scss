@@ -8,36 +8,65 @@
     width: 100%;
     padding: 5vh 20%;
 
-    @include responsive(tab_vert) {
-        padding: 5vh 10%;
-    }
-
-    @include responsive(tab_hori) {
-        padding: 5vh 10%;
-    }
-
-    @include responsive(phone) {
-        padding: 5vh 4%;
-    }
-
     .redirectionWrap {
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin: 10px 0 10vh 0;
+        margin: 10px 0 80px 0;
+    }
+
+    @include responsive(desktop) {
+        padding: 4vh 14%;
+
+        .redirectionWrap {
+            margin: 10px 0 80px 0;
+        }
+    }
+
+    @include responsive(tab_hori) {
+        padding: 4vh 10%;
+
+        .redirectionWrap {
+            margin: 10px 0 70px 0;
+        }
+    }
+
+    @include responsive(tab_vert) {
+        padding: 2vh 20px;
+
+        .redirectionWrap {
+            margin: 10px 0 60px 0;
+        }
+    }
+
+    @include responsive(phone) {
+        padding: 1vh 10px;
+
+        .redirectionWrap {
+            margin: 10px 0 46px 0;
+        }
+    }
+
+    @include responsive(fold) {
+        padding: 0vh 10px;
+
+        .redirectionWrap {
+            margin: 10px 0 26px 0;
+        }
     }
 
     // Redirection Input 및 button 박스
     .redirectionBox {
         width: 100%;
-        height: 5rem;
+        height: 90px;
         display: flex;
+        font-size: 1rem;
 
         .redirectionInput {
             width: calc(100% - 200px);
             height: 100%;
-            padding: 20px 16px;
-            font-size: 1.2rem;
+            padding: 0px 16px;
+            font-size: 1.2em;
             font-family: 'NanumSquareB';
             letter-spacing: 0.1rem;
             border-radius: 6px 0px 0px 6px;
@@ -47,7 +76,7 @@
         .button {
             width: 200px;
             height: 100%;
-            font-size: 1.2rem;
+            font-size: 1.2em;
             border-radius: 0px 6px 6px 0px;
             display: flex;
             align-items: center;
@@ -60,6 +89,62 @@
             border-right: 1px solid #000;
             border-bottom: 1px solid #000;
             cursor: pointer;
+        }
+
+        @include responsive(tab_hori) {
+            height: 80px;
+            font-size: 0.9rem;
+
+            .redirectionInput {
+                width: calc(100% - 180px);
+                padding: 6px 12px;
+            }
+
+            .button {
+                width: 180px;
+            }
+        }
+
+        @include responsive(tab_vert) {
+            height: 70px;
+            font-size: 0.8rem;
+
+            .redirectionInput {
+                width: calc(100% - 140px);
+                padding: 0px 6px;
+            }
+
+            .button {
+                width: 140px;
+            }
+        }
+
+        @include responsive(phone) {
+            height: 60px;
+            font-size: 0.8rem;
+
+            .redirectionInput {
+                width: calc(100% - 92px);
+                padding: 0px 6px;
+            }
+
+            .button {
+                width: 92px;
+            }
+        }
+
+        @include responsive(fold) {
+            height: 40px;
+            font-size: 0.6rem;
+
+            .redirectionInput {
+                width: calc(100% - 100px);
+                padding: 0px 4px;
+            }
+
+            .button {
+                width: 100px;
+            }
         }
 
         .create {
@@ -83,7 +168,7 @@
 
     // Redirection 프리뷰 박스
     .redirectionResultBox {
-        margin-top: 2rem;
+        margin-top: 1.8rem;
         display: none;
 
         &.show {
@@ -94,6 +179,22 @@
             background-color: rgba(#000, 0.05);
 
             cursor: pointer;
+        }
+
+        @include responsive(tab_hori) {
+            margin-top: 1.6rem;
+        }
+
+        @include responsive(tab_vert) {
+            margin-top: 1.4rem;
+        }
+
+        @include responsive(phone) {
+            margin-top: 1.2rem;
+        }
+
+        @include responsive(fold) {
+            margin-top: 1rem;
         }
     }
 
