@@ -16,7 +16,14 @@ function Post(props) {
         date,
         isEmpty,
         status,
-    }: { content: string } = props;
+    }: {
+        id: any;
+        content: any;
+        title: any;
+        date: any;
+        isEmpty: any;
+        status: any;
+    } = props;
 
     // 에러처리
     if (status !== 'success') return <div>알수없는 포스트 입니다.</div>;
