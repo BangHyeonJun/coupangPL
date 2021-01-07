@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-Disallow: /redirect
 Sitemap: https://cpredirection.com/sitemap.xml

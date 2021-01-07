@@ -40,6 +40,10 @@ function Redirect() {
                 process.env.NEXT_PUBLIC_SALT_KEY,
             );
             window.location.href = decURL as string;
+        } else {
+            setTimeout(() => {
+                window.location.href = '/';
+            }, 1000);
         }
     }, [url]);
 

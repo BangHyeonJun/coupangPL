@@ -124,12 +124,6 @@ function Index() {
                 {/* 헤더 */}
                 <Header isBeta={true}></Header>
 
-                <Image
-                    src={'/posts/what_is_coupang_partners/1.png'}
-                    width={'100vw'}
-                    height={'100vw'}
-                ></Image>
-
                 {/* 바디 */}
                 <section className={cx('bodyWrap')}>
                     <div className={cx('redirectionWrap')}>

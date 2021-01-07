@@ -88,17 +88,4 @@ export function getPost(id) {
         isEmpty: matterResult.isEmpty,
         status: 'success',
     };
-
-    return {
-        id,
-        ...matterResult.data,
-    };
-
-    return fileNames.map(fileName => {
-        return {
-            params: {
-                id: fileName.replace(/\.md$/, ''),
-            },
-        };
-    });
 }
