@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import Head from 'next/head';
+import Image from 'next/image';
 import { encrypt } from '../src/helpers/crypto';
 
 import Header from '../src/components/Header';
@@ -122,6 +123,12 @@ function Index() {
 
                 {/* 헤더 */}
                 <Header isBeta={true}></Header>
+
+                <Image
+                    src={'/posts/what_is_coupang_partners/1.png'}
+                    width={'100vw'}
+                    height={'100vw'}
+                ></Image>
 
                 {/* 바디 */}
                 <section className={cx('bodyWrap')}>

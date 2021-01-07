@@ -1,0 +1,48 @@
+@import '../../common/mixins';
+
+.wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.titleBox {
+    width: 100%;
+    max-width: 1200px;
+    font-family: 'NanumSquareEB';
+    font-size: 36px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.box {
+    width: 100%;
+    margin-bottom: 40px;
+    border: 1px solid rgba(#000000, 0.2);
+    padding: 20px 30px;
+    cursor: pointer;
+    display: flex;
+
+    .thumnailBox {
+        width: 200px;
+        margin-right: 30px;
+    }
+
+    .titleBox2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        > div {
+            margin-bottom: 10px;
+        }
+    }
+
+    &:hover {
+        background-color: rgba(#000000, 0.2);
+    }
+}
