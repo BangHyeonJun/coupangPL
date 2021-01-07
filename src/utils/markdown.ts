@@ -85,7 +85,6 @@ export function getPost(id) {
         content: matterResult.content,
         title: matterResult.data.title,
         date: matterResult.data.date,
-        isEmpty: matterResult.isEmpty,
         status: 'success',
     };
 }

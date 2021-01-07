@@ -14,14 +14,12 @@ function Post(props) {
         content,
         title,
         date,
-        isEmpty,
         status,
     }: {
         id: any;
         content: any;
         title: any;
         date: any;
-        isEmpty: any;
         status: any;
     } = props;
 
