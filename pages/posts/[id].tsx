@@ -23,6 +23,7 @@ function Post(props) {
         title: any;
         date: any;
         status: any;
+        thumnail: any;
     } = props;
 
     // 에러처리
