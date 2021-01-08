@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import Head from 'next/head';
 import Footer from '../../src/components/Footer';
 import { getAllPostIds, getPost } from '../../src/utils/markdown';
+import AdSense from "react-adsense"
 
 import classNames from 'classnames/bind';
 import styles from '@/styles/import/posts/post.module.scss';
@@ -97,6 +98,16 @@ function Post(props) {
                 </header>
                 <div className={cx('contentContainer')}>
                     <ReactMarkdown>{content}</ReactMarkdown>
+                </div>
+                <div>
+                    <AdSense.Google
+                        client='ca-pub-4278000043835062'
+                        slot='7806394673'
+                        style={{ display: 'block' }}
+                        format='auto'
+                        responsive='true'
+                        layoutKey='-gw-1+2a-9x+5c'
+                    />
                 </div>
             </div>
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 import classNames from 'classnames/bind';
 import styles from '@/styles/import/index/Header.module.scss';
@@ -11,6 +12,12 @@ interface HeaderArgs {
 function Header({ isBeta }: HeaderArgs) {
     return (
         <header className={cx('logoWrap')}>
+            <div className={cx('blogMenuBox')}>
+                <Link href="/posts">
+                    <span>블로그 가기</span>
+                </Link>
+            </div>
+
             <div className={cx('coupangPartners')}>
                 <span className={cx('cou')}>cou</span>
                 <span className={cx('p')}>p</span>

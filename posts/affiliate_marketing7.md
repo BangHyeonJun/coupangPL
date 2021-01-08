@@ -4,7 +4,7 @@ date: '2020-12-06 19:14:01'
 thumnail: /posts/affiliate_marketing7/1.jpg
 ---
 
-![쿠팡파트너스 대표 이미지](/posts/affiliate_marketing7/1.png)
+![쿠팡파트너스 대표 이미지](/posts/affiliate_marketing7/1.jpg)
 
 ---
 
