@@ -10,15 +10,12 @@ export function getSortedPostsData() {
 
     const regex = RegExp('/*.md');
     fileNames = fileNames.filter(fileName => {
-        console.log(fileName, fileName.match(regex));
         return regex.test(fileName);
     });
 
     const allPostsData = fileNames.map(fileName => {
         // Remove ".md" from file name to get id
         const id = fileName.replace(/\/*.md$/, '');
-
-        console.log(id);
 
         // Read markdown file as string
         const fullPath = path.join(postsDirectory, fileName);

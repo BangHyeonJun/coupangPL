@@ -15,7 +15,6 @@ const formatted = sitemap => prettier.format(sitemap, { parser: 'html' });
     // axios를 이용해 post 리스트 가져오기
     // <API_DOAMIN>, <API_NAME> 등은 실제 값이 아닙니다!
     const test = getAllPostIds();
-    console.log(test);
 
     const postList = [];
     // 적절히 파싱

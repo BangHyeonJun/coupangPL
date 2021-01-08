@@ -25,8 +25,6 @@ function Post(props) {
         status: any;
     } = props;
 
-    console.log(thumnail)
-
     // 에러처리
     if (status !== 'success') return <div>알수없는 포스트 입니다.</div>;
 
