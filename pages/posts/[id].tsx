@@ -16,6 +16,7 @@ function Post(props) {
         title,
         date,
         status,
+        thumnail
     }: {
         id: any;
         content: any;
@@ -23,6 +24,8 @@ function Post(props) {
         date: any;
         status: any;
     } = props;
+
+    console.log(thumnail)
 
     // 에러처리
     if (status !== 'success') return <div>알수없는 포스트 입니다.</div>;
@@ -45,7 +48,7 @@ function Post(props) {
                 <meta
                     name="description"
                     property="og:description"
-                    content="쿠팡 파트너스로 인한 개인 블로그의 저품질을 막기 위한 리디렉션 생성기 입니다. 기존의 다른 블로그를 통한 번거로운 리디렉션 단계를 최소화 하고 사용자의 수익 보장을 위해 제작되어졌으며, 어떠한 블로그라도 사용이 가능합니다."
+                    content={content}
                 />
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="ko_KR" />
@@ -56,7 +59,7 @@ function Post(props) {
                 <meta
                     name="image"
                     property="og:image"
-                    content="/images/opengraph.jpg"
+                    content={thumnail}
                 />
                 <meta
                     name="url"
@@ -72,9 +75,9 @@ function Post(props) {
                 />
                 <meta
                     name="twitter:description"
-                    content="쿠팡 파트너스로 인한 개인 블로그의 저품질을 막기 위한 리디렉션 생성기 입니다. 기존의 다른 블로그를 통한 번거로운 리디렉션 단계를 최소화 하고 사용자의 수익 보장을 위해 제작되어졌으며, 어떠한 블로그라도 사용이 가능합니다."
+                    content={content}
                 />
-                <meta name="twitter:image" content="/images/opengraph.jpg" />
+                <meta name="twitter:image" content={thumnail} />
 
                 {/* 구글 서치 콘솔 */}
                 <meta
