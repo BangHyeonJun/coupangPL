@@ -46,7 +46,7 @@ function Post(props) {
                 <meta
                     name="description"
                     property="og:description"
-                    content={content}
+                    content={`${content}`}
                 />
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="ko_KR" />
@@ -57,7 +57,7 @@ function Post(props) {
                 <meta
                     name="image"
                     property="og:image"
-                    content={thumnail}
+                    content={`${thumnail}`}
                 />
                 <meta
                     name="url"
@@ -73,9 +73,9 @@ function Post(props) {
                 />
                 <meta
                     name="twitter:description"
-                    content={content}
+                    content={`${content}`}
                 />
-                <meta name="twitter:image" content={thumnail} />
+                <meta name="twitter:image" content={`${thumnail}`} />
 
                 {/* 구글 서치 콘솔 */}
                 <meta
