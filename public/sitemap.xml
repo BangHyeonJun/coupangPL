@@ -110,13 +110,19 @@
     </url>
     <url>
         <loc>https://cpredirection.com/posts/irooda</loc>
-        <lastmod>2020-12-31T16:03:19.388Z</lastmod>
+        <lastmod>2021-01-08T16:03:19.388Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://cpredirection.com/posts/irooda2</loc>
-        <lastmod>2020-12-31T16:03:19.388Z</lastmod>
+        <lastmod>2021-01-09T16:03:19.388Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://cpredirection.com/posts/onlinecommerce</loc>
+        <lastmod>2021-01-11T16:03:19.388Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
