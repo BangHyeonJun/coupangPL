@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import classNames from 'classnames/bind';
-import styles from '@/styles/import/index/Header.module.scss';
+import styles from '@/styles/components/Header.module.scss';
 const cx = classNames.bind(styles);
 
 interface HeaderArgs {

@@ -5,6 +5,7 @@ import { encrypt } from '../src/helpers/crypto';
 
 import Header from '../src/components/Header';
 import Footer from '../src/components/Footer';
+import Nav from '../src/components/Nav';
 import Description from '../src/components/Description';
 
 import classNames from 'classnames/bind';
@@ -120,6 +121,9 @@ function Index() {
                     ></script>
                     <title>쿠팡 파트너스 | 온라인 리디렉션 생성기</title>
                 </Head>
+
+                {/* 나브바 */}
+                <Nav></Nav>
 
                 {/* 헤더 */}
                 <Header isBeta={true}></Header>

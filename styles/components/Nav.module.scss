@@ -1,0 +1,15 @@
+@import '../common/mixins';
+
+.wrap {
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 999;
+    box-shadow: 0 2px 12px 0 rgba(20, 20, 20, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.homeImage {
+    cursor: pointer;
+}

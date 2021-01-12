@@ -1,7 +1,7 @@
 import React from 'react';
 
 import classNames from 'classnames/bind';
-import styles from '@/styles/import/index/Footer.module.scss';
+import styles from '@/styles/components/Footer.module.scss';
 const cx = classNames.bind(styles);
 
 function Footer() {
