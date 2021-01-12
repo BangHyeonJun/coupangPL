@@ -123,7 +123,7 @@ function Index() {
                 </Head>
 
                 {/* 나브바 */}
-                <Nav></Nav>
+                {/* <Nav></Nav> */}
 
                 {/* 헤더 */}
                 <Header isBeta={true}></Header>
