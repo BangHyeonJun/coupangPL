@@ -18,8 +18,6 @@ const initGA = (code: string, Router: CustomeSingletonRouter): void => {
     // local이거나 development 환경일 땐 ga를 실행하지 않습니다.
     const shouldNotTrack = isLocal() || isDev();
 
-    console.log(shouldNotTrack);
-
     // production or dev analytics
     const analytics = shouldNotTrack ? devLytics : prodLytics;
 
