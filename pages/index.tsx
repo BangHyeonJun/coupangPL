@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 import { encrypt } from '../src/helpers/crypto';
 
 import Header from '../src/components/Header';
@@ -108,17 +107,17 @@ function Index() {
                     />
 
                     {/* 구글 서치 콘솔 */}
-                    <meta
+                    {/* <meta
                         name="google-site-verification"
                         content="d-xcWas9fG1pO930ekTYAPoo8WyhYAjSB1u0-vhUSqE"
-                    />
+                    /> */}
 
                     {/* 애드센스 */}
-                    <script
+                    {/* <script
                         data-ad-client="ca-pub-4278000043835062"
                         async
                         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-                    ></script>
+                    ></script> */}
                     <title>쿠팡 파트너스 | 온라인 리디렉션 생성기</title>
                 </Head>
 
