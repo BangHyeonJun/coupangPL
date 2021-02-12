@@ -31,7 +31,7 @@ function Description() {
                 src: '/images/blog.svg',
                 alt: '모든 블로그 사용가능',
             },
-            title: '저품질 문제 해결',
+            title: '모든 블로그 사용 가능',
             contents: `리디렉션 코드를 그대로 복사하여 사용하기 때문에 사용자가 어떠한 블로그를 사용하더라도 안전한 사용이 가능합니다.`,
         },
         {

@@ -12,11 +12,11 @@ interface HeaderArgs {
 function Header({ isBeta }: HeaderArgs) {
     return (
         <header className={cx('logoWrap')}>
-            <div className={cx('blogMenuBox')}>
+            {/* <div className={cx('blogMenuBox')}>
                 <Link href="/posts">
                     <span>블로그 가기</span>
                 </Link>
-            </div>
+            </div> */}
 
             <div className={cx('coupangPartners')}>
                 <span className={cx('cou')}>cou</span>
