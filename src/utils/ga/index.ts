@@ -25,6 +25,7 @@ const initGA = (code: string, Router: CustomeSingletonRouter): void => {
 
     // init
     analytics.init(code);
+
     // log page
     analytics.pageview();
 
