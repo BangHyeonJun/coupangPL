@@ -13,7 +13,7 @@ function App({ Component, pageProps }: AppProps) {
         return () => {
             initGA(process.env.NEXT_PUBLIC_GA_ID, Router);
         };
-    }, []);
+    });
 
     return (
         <>
