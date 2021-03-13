@@ -7,7 +7,6 @@ const isLocal = (): boolean => {
 };
 
 const isDev = (): boolean => {
-    console.log(`isDev : ${process.env.NEXT_PUBLIC_NODE_ENV}`);
     return process.env.NEXT_PUBLIC_NODE_ENV !== 'production';
 };
 

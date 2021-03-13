@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 import { encrypt } from '../src/helpers/crypto';
 
@@ -7,14 +7,44 @@ import Footer from '../src/components/Footer';
 import Nav from '../src/components/Nav';
 import Description from '../src/components/Description';
 
+import Router from 'next/router';
+
 import classNames from 'classnames/bind';
 import styles from '@/styles/import/index/index.module.scss';
 const cx = classNames.bind(styles);
+
+declare global {
+    interface Window {
+        gtag(config: string, id: string, attr): void;
+    }
+}
 
 function Index() {
     const [CPUrl, setCPUrl] = useState('');
     const [redirectionURL, setRedirectionURL] = useState('');
     const resultUrlRef: React.LegacyRef<HTMLInputElement> = useRef(null);
+
+    // // React GA
+    // useEffect(() => {
+    //     const handleRouteChangeComplete = () => {
+    //         if (typeof window === 'object') {
+    //             const { title } = window.document;
+    //             const { href, pathname } = window.location;
+    //
+    //             window.gtag('config', `${process.env.NEXT_PUBLIC_GA_ID}`, {
+    //                 page_title: title,
+    //                 page_location: href,
+    //                 page_path: pathname,
+    //             });
+    //         }
+    //     };
+    //
+    //     Router.events.on('routeChangeComplete', handleRouteChangeComplete);
+    //
+    //     return () => {
+    //         Router.events.off('routeChangeComplete', handleRouteChangeComplete);
+    //     };
+    // }, []);
 
     const handleClickRedirection = () => {
         const rule = /https:\/\/coupa.ng\/([A-Za-z0-9]+)/;
