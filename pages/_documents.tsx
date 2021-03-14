@@ -16,7 +16,12 @@ class MyDocument extends Document {
     render() {
         return (
             <Html>
-                <Head></Head>
+                <Head>
+                    <meta
+                        name="google-site-verification"
+                        content="d-xcWas9fG1pO930ekTYAPoo8WyhYAjSB1u0-vhUSqE"
+                    />
+                </Head>
                 <body>
                     <Main />
                     <NextScript />
