@@ -130,10 +130,10 @@ function Index() {
                     />
 
                     {/* 구글 서치 콘솔 */}
-                    {/* <meta
+                    <meta
                         name="google-site-verification"
                         content="d-xcWas9fG1pO930ekTYAPoo8WyhYAjSB1u0-vhUSqE"
-                    /> */}
+                    />
 
                     {/* 애드센스 */}
                     {/* <script
