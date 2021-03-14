@@ -8,7 +8,7 @@ function Footer() {
     return (
         <footer className={cx('footerWrap')}>
             <span>
-                © 2021 GaeBalSaeBalLab — Made with for the people of the coupang
+                © 2021 자몽아이들 — Made with for the people of the coupang
                 partners.
             </span>
         </footer>

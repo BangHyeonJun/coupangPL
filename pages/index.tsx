@@ -9,6 +9,10 @@ import Description from '../src/components/Description';
 
 import classNames from 'classnames/bind';
 import styles from '@/styles/import/index/index.module.scss';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const cx = classNames.bind(styles);
 
 declare global {
@@ -47,6 +51,10 @@ function Index() {
         e: React.ChangeEvent<HTMLInputElement>,
     ) => {
         const value: string = e.target.value || '';
+
+        if (value !== CPUrl && redirectionURL.length !== 0) {
+            setRedirectionURL('');
+        }
         setCPUrl(value.replace(/\s/gi, ''));
     };
 
@@ -54,6 +62,15 @@ function Index() {
         if (resultUrlRef.current.value) {
             resultUrlRef.current.select();
             document.execCommand('copy');
+            toast.info('🚀 링크가 복사되었습니다!!', {
+                position: 'top-right',
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
         } else {
             alert('먼저 쿠팡 파트너스 단축 URL을 입력해주세요');
         }
@@ -159,7 +176,7 @@ function Index() {
                             className={cx(
                                 'redirectionBox',
                                 'redirectionResultBox',
-                                'show',
+                                { show: redirectionURL.length !== 0 },
                             )}
                         >
                             <input
@@ -190,6 +207,7 @@ function Index() {
 
                 {/* 푸터 */}
                 <Footer></Footer>
+                <ToastContainer />
             </div>
             {/* 로그인 */}
             {/* <div className={cx('bg')}>
