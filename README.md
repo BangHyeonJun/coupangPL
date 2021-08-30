@@ -1,1 +1,5 @@
-scss 컨벤션 https://webclub.tistory.com/518#_placeholder_selector
+# 🔗 리다이렉션 생성기 (Redirect Generator)
+
+검색 엔진 봇이 주소를 직접 크롤링 하게 하고 싶지 않으세요?? 
+
+---
