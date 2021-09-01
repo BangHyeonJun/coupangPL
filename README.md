@@ -8,7 +8,6 @@
 
 ## 🔗 사용방법
 
----
 
 1. 해당 [사이트](https://coupang-partners-link-lnraqzkno.vercel.app)의 접속합니다.
 2. 리다이렉션 시킬 URL을 리디렉션 생성 입력 창의 넣어줍니다.
@@ -18,12 +17,8 @@
 
 ## ⛔ Warning
 
----
-
 **해당 프로그램을 사용하면서 발생하는 불이익은 일체 사용자에게 있습니다.**
 
-## License
-
----
+## 🔥 License
 
 MIT License
