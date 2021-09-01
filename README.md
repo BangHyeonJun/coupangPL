@@ -1,6 +1,5 @@
 # 브릿지 리다이렉션 생성기 (Bridge Redirect Generator)
-
-
+[![GitHub license](https://img.shields.io/github/license/BangHyeonJun/coupang_partners_link)](https://github.com/BangHyeonJun/coupang_partners_link)
 
 ![BRG](./BRG.png)
 
