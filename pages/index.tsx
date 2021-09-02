@@ -10,6 +10,9 @@ import Description from '../src/components/Description';
 import classNames from 'classnames/bind';
 import styles from '@/styles/import/index/index.module.scss';
 
+import Button from '@material-ui/core/Button';
+import Container from '@material-ui/core/Container';
+
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -190,12 +193,13 @@ function Index() {
                                 onClick={handleClicCopy}
                                 readOnly={true}
                             />
-                            <button
-                                className={cx('button', 'copy')}
+                            <Button
+                                variant="contained"
+                                color="primary"
                                 onClick={handleClicCopy}
                             >
                                 복사
-                            </button>
+                            </Button>
                         </div>
                     </div>
 
