@@ -1,4 +1,4 @@
-# 브릿지 리다이렉션 생성기 (Bridge Redirect Generator)
+# ~~브릿지 리다이렉션 생성기 (Bridge Redirect Generator)~~
 
 > ⚠ 2021.10.01 해당 서비스는 현재 서비스가 종료되었습니다. 참고바랍니다.
 
