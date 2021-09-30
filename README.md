@@ -1,9 +1,12 @@
 # 브릿지 리다이렉션 생성기 (Bridge Redirect Generator)
+
+> ⚠ 2021.10.01 해당 서비스는 현재 서비스가 종료되었습니다. 참고바랍니다.
+
 [![GitHub license](https://img.shields.io/github/license/BangHyeonJun/coupang_partners_link)](https://github.com/BangHyeonJun/coupang_partners_link)
 
 ![BRG](./BRG.png)
 
-> 웹 기반 중간 브릿지를 생성해 주는 리다이렉션 생성기
+> ~~웹 기반 중간 브릿지를 생성해 주는 리다이렉션 생성기~~
 
 ## 🔗 사용방법
 
